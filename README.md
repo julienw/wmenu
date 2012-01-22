@@ -3,6 +3,9 @@ WMenu - A menu for PHP websites
 Version 2.0
 -------------------------------
 
+Disclaimer: this project is quite old and it may have problems on
+modern configurations. For example it wasn't tested at all on PHP5.
+
 1 - Purpose
 -----------
 A new menu system is usually developed for each site. But it's clearly

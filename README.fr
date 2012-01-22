@@ -2,7 +2,9 @@ WMenu - Un menu pour les sites PHP
 ==================================
 Version 2.0
 ----------------------------------
-Web: http://www.minet.net/spip/article.php3?id_article=120
+
+Attention: ce projet est assez ancien et peut ne pas convenir aux standards
+actuels. Notamment, il n'a pas été testé (encore) avec PHP5.
 
 1 - Le but
 ----------
