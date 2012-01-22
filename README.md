@@ -27,13 +27,17 @@ Wmenu can be installed server-wide or for a particular site.
  This directory must be in PHP's variable `include_path`, which can be modified
  in an `.htaccess` as follows :
 
-    php_value include_path "include directory:/usr/share/pear:."
+```
+php_value include_path "include directory:/usr/share/pear:."
+```
 
 - Copy both `stylemenu.css` and `styleie.css` in the main directory where
  your other style files are located, and import the first one in your main
  style file, whose name must be `style.css` :
 
- @import url(stylemenu.css);
+```css
+@import url(stylemenu.css);
+```
 
 - Finally, you can copy the file `empty.php` to your site's root directory, if
  you have to use it.
@@ -41,7 +45,7 @@ Wmenu can be installed server-wide or for a particular site.
 ### Several sites on the same server
 Instead of installing the menu once per site, you can do a server-wide install
 in a common directory, with the `include_path` variable set as follows :
- 
+
     php_value include_path "specific include directory:general include directory:/usr/share/pear:."
 
 Moreover, CSS files could be linked to a common CSS from a common directory;
