@@ -1,0 +1,12 @@
+@import url(stylemenu.css);
+
+BODY,P,TD,TABLE,HTML {
+	    font-family : Arial, sans-serif;
+		font-size : 13px;
+}
+
+BODY, HTML {
+	background-image: url(images/bgpaper8.png);
+}
+
+

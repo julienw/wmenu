@@ -1,0 +1,11 @@
+Planned features for the far future
+-----------------------------------
+Note : I won't code these features unless I really need them. (== send me
+patches ;-)
+
+- ability to insert some HTML code into the header (META tags for example,
+  or Javascript code)
+- alternate CSS files
+- related links
+
+

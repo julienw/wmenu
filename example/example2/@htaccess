@@ -1,0 +1,3 @@
+#php_value include_path "repertoire include specifique:repertoire include general:/usr/share/pear:."
+php_value include_path "/home/flash/temp/cvs/wmenu/example/example2/include:/home/flash/temp/cvs/wmenu/include:/usr/share/pear:."
+

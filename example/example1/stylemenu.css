@@ -1,0 +1,124 @@
+body {
+	margin: 0;
+}
+
+/* --------- menu ------------ */
+
+#menu {
+	position: fixed;
+	top: 5em;
+    border-width: 1px;
+    border-color: #C0C0C0;
+    border-style: solid;
+    background-color: #FFFAEA;
+	width: 17em;
+	margin: 5px;
+	margin-right: 20px;
+}
+
+#menu A {
+    text-decoration: none;
+    color: black;
+}
+
+/*
+#menu A:hover {
+    text-decoration: underline;
+    color: blue;
+    background-color : transparent;
+}
+*/
+
+#menu .selected A {
+    color: #5F76B9;
+    font-weight : bold;
+}
+
+
+#menu .emph A {
+    font-style : italic;
+}
+
+/* -------- /menu -------- */
+
+/* -------- title -------- */
+#sitetitle h1 {
+    font-size : 2em;
+    font-weight : bold;
+    font-style : italic;
+	float: right;
+	margin: 0;
+	padding: 0;
+}
+
+#sitetitle {
+    background-color : #9FB6CD;
+    height: 4em;
+	padding-left: 4px;
+	padding-top: 6px;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+#sitetitle #logo {
+	background-image: url(images/rezosup_logo_tiny.png);
+	background-repeat: no-repeat;
+	height: 32px;
+	width: 180px;
+	margin-top: 2px;
+}
+
+#sitetitle #logo span {
+	display: none;
+}
+
+
+#prelude { text-align: left; margin: 0 0 0 0; }
+#prelude, #prelude a, #prelude a:visited { color: #7090A0; }
+
+h2 {
+    font-weight : bold;
+    font-size : 13px;
+}
+
+h2 A {
+	text-decoration: none;
+	color: black;
+}
+
+h2 A:hover {
+	text-decoration: none;
+	color: blue;
+	background-color: transparent;
+	border-style: none;
+}
+
+/* -------- /title --------- */
+
+/* --------- main ---------- */
+#main {
+	margin: 5px;
+	margin-left: 19em;
+	margin-top: 5.5em;
+}
+
+/* -------- general -------- */
+A {
+    background-color : transparent;
+	color: blue;
+}
+
+A:hover {
+        text-decoration : none;
+        background-color : #C6E2FF;
+        color : blue;
+		border-top-width: 1px;
+		border-top-color: #C0C0C0;
+		border-top-style: solid; 
+		border-bottom-width: 1px;
+		border-bottom-color: #C0C0C0;
+		border-bottom-style: solid;
+}
+
+/* ------ /general ------- */

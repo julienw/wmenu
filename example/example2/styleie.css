@@ -1,0 +1,12 @@
+/*
+   fichier de style pour Internet Explorer
+ */
+
+#sitetitle #logo {
+	background-image: none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/rezosup_logo_tiny.png');
+}
+
+#menu, #sitetitle {
+	position: absolute;
+}
