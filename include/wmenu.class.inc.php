@@ -44,7 +44,7 @@ class WMenu {
 	var $_menu_place = MENU_PLACE_FOOTER;
 	var $_menu_type_arg = null;
 
-	function WMenu ($config) {
+	function __construct($config) {
 		$this->_menu = $config->menu;
 		$this->setBaseUrl($config->base_url);
 		$this->setSiteTitle($config->site_title);
@@ -238,7 +238,7 @@ class WMenu {
 				$suffix = "";
 			}
 
-			$string .= "<div style='padding-left: ${padding}em'>{$class1}";
+			$string .= "<div style='padding-left: {$padding}em'>{$class1}";
 			$string .= $this->_get_link_for_item ($title, $item[0], is_array($item[1]), $suffix);
 			$string .= "{$classend1}</div>\n";
 
@@ -250,7 +250,6 @@ class WMenu {
 
 		return $string;
 	}
-
 
 	/* this function returns (and caches) a string, that is an html link
 	   (A anchor) to the item,
@@ -281,7 +280,7 @@ class WMenu {
 
 		if (is_array($link)) $link = $link[0]; // if it's an array, let's take the first element
 		while (true) {
-			switch ($link{0}) {
+			switch ($link[0]) {
 				/* lien externe */
 				case '!' :
 					$target = " TARGET='_blank'";
@@ -341,9 +340,7 @@ class WMenu {
 		$prelude = $this->_getPrelude();
 
 		$result = <<<HTML
-<!DOCTYPE html 
-     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
@@ -446,7 +443,7 @@ HTML;
 	}
 
 	function calculate () {
-		return ($this->compute_path() & $this->compute_pagetitle() & $this->build_menu());
+		return ($this->compute_path() && $this->compute_pagetitle() && $this->build_menu());
 	}
 }
 

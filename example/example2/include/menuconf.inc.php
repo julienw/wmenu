@@ -26,7 +26,7 @@
    by Flash <flash@minet.net>
    March 2004
 
-Caractères spéciaux (à spécifier _au début_ !):
+CaractÃ¨res spÃ©ciaux (Ã  spÃ©cifier _au dÃ©but_ !):
    ! : ouvre dans une nouvelle fenetre
    + : met en valeur
    @ : un click sur cet item ne fera rien (meme pour des sous menus)
@@ -41,13 +41,13 @@ Notes :
    - si c'est un item feuille, il ne fera rien (comme avec le caractere @)
 
 Limitations :
-   On ne peut pas utiliser deux fois le même titre.
+   On ne peut pas utiliser deux fois le mÃªme titre.
 
    */
 
 class SiteConfiguration {
 
-	var $base_url = "/~flash/wmenu";
+	var $base_url = "/example2";
 	var $site_title = "Site d'exemple de WMenu";
 	var $texts = array (
 			'main'	=> 'Aller au contenu', 
@@ -66,7 +66,7 @@ class SiteConfiguration {
 					"Page 4" => array("page4.php"),
 					"Liens Google" => array ("", array (
 							"Google" => array("http://www.google.fr"),
-							/* exemples plus compliqués */
+							/* exemples plus compliquÃ©s */
 							"Google nouvelle page" => array("!http://www.google.fr"),
 							"Google mis en valeur" => array("+http://www.google.fr"),
 							"Google en valeur et nv page" => array("!+http://www.google.fr"),
@@ -77,9 +77,9 @@ class SiteConfiguration {
 							"page 5" => array("page5.php"),
 							)
 						),
-					/* plusieurs pages pour le même item (utile pour un formulaire et son résultat) */
+					/* plusieurs pages pour le mÃªme item (utile pour un formulaire et son rÃ©sultat) */
 					"Item multiple" => array(array("page6.php", "page7.php")),
-					"Liens de démo" => array("liens.php"),
+					"Liens de dÃ©mo" => array("liens.php"),
 			)
 		)
 	);
